@@ -236,8 +236,8 @@ namespace osu.Game.Rulesets.Mania
                     return new Mod[]
                     {
                         new ManiaModEasy(),
-                        new ManiaModNoFail(),
-                        new MultiMod(new ManiaModHalfTime(), new ManiaModDaycore()),
+                        new MultiMod(new ManiaModNoFail(), new ManiaModSafetyNet()),
+                        new MultiMod(new ManiaModHalfTime(), new ManiaModDaycore())
                     };
 
                 case ModType.DifficultyIncrease:

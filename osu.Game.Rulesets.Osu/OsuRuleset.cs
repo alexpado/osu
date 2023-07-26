@@ -155,7 +155,7 @@ namespace osu.Game.Rulesets.Osu
                     return new Mod[]
                     {
                         new OsuModEasy(),
-                        new OsuModNoFail(),
+                        new MultiMod(new OsuModNoFail(), new OsuModSafetyNet()),
                         new MultiMod(new OsuModHalfTime(), new OsuModDaycore()),
                     };
 

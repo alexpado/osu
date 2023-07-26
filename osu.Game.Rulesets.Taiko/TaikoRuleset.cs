@@ -139,7 +139,7 @@ namespace osu.Game.Rulesets.Taiko
                     return new Mod[]
                     {
                         new TaikoModEasy(),
-                        new TaikoModNoFail(),
+                        new MultiMod(new TaikoModNoFail(), new TaikoModSafetyNet()),
                         new MultiMod(new TaikoModHalfTime(), new TaikoModDaycore()),
                     };
 
